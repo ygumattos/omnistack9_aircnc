@@ -1,0 +1,29 @@
+1. install node
+2. install yarn
+3. yarn add express
+4. yarn add nodemon -D
+5. instalar insomnia -> testar rotas 
+6. yarn add multer -> lidar com depencias multiplataformas
+
+Express = microframework / definição do servidor
+Express por padrão não entende uma requisição via json, para isso: express.json()
+*** Metodos API REST = GET, POST, PUT, DELETE (principais)
+    Para filtros / GET = {
+        Para receber dados via GET, utilizamos os QUERY PARAMS (/users?idade=20)
+        req.query = Acessar query params (para filtros)
+    }   
+    Para edição / POST, PUT, DELETE = {
+        Podemos passar dados, como um id para atualizar/deletar
+        /users/:id -> req.params.id ->> no codigo
+        localhost/users/1 -> no navegador
+        req.params = Acessar route params (para edição, delete)
+    }
+    Para criação e edição / POST, PUT, DELETE = {
+        Recuperar dados no corpo da requisição
+        req.body -> retorna um json 
+    }
+
+
+    *** Servidor MongoDB Atlas ***
+    Login: project
+    Senha: projectmongo
